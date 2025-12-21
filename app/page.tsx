@@ -22,9 +22,8 @@ export default function HomePage() {
       <main>
         <HeroSection />
         {/* <FeaturedCategories /> */}
-   
-        <BestSellers />
-             <FeaturedProducts />
+       <BestSellers />
+       <FeaturedProducts />
         <TrustSection />
         <SpecialOffers />
         <PopularBrands />
