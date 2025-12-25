@@ -52,11 +52,11 @@ export function HeroSliderSection() {
   }, [isAutoPlaying])
 
   const handleCall = () => {
-    window.location.href = "tel:+7340050070"
+    window.location.href = "tel:+9876543210"
   }
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/7340050070?text=Hello, I'm interested in your premium liquor collection", "_blank")
+    window.open("https://wa.me/9876543210?text=Hello, I'm interested in your premium liquor collection", "_blank")
   }
 
   return (
