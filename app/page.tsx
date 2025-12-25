@@ -13,14 +13,18 @@ import { CustomerReviews } from "@/features/home/customer-reviews"
 import { DeliveryBanner } from "@/features/home/delivery-banner"
 import { Newsletter } from "@/features/home/newsletter"
 import { ResponsibleDrinking } from "@/features/home/responsible-drinking"
-
+import { HeroSliderSection } from "@/features/home/hero-slider-section"
+import { HeroModernSection } from "@/features/home/hero-modern-section"
+import { HeroPremiumSection } from "@/features/home/hero-premium-section"
+import { HeroUltraModernSection } from "@/features/home/hero-ultra-modern-section"
 export default function HomePage() {
   return (
     <>
       <AgeVerificationModal />
       <Navbar />
       <main>
-        <HeroSection />
+      <HeroSliderSection/>
+
         {/* <FeaturedCategories /> */}
        <BestSellers />
        <FeaturedProducts />

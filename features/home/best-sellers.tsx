@@ -17,15 +17,60 @@ interface BestSellerProduct {
 }
 
 export function BestSellers() {
-  const [bestSellers, setBestSellers] = useState<BestSellerProduct[]>([])
+  const [bestSellers, setBestSellers] = useState<BestSellerProduct[]>([
+    {
+      id: "1",
+      name: "Premium Red Wine Collection",
+      brand: "Château Excellence",
+      price: 2499,
+      rating: 4.8,
+      image: "/red-wine-bottle-chateau-margaux.jpg",
+      slug: "premium-red-wine"
+    },
+    {
+      id: "2",
+      name: "Single Malt Whiskey",
+      brand: "Highland Reserve",
+      price: 3999,
+      rating: 4.9,
+      image: "/luxury-whiskey-bottles-bar.jpg",
+      slug: "single-malt-whiskey"
+    },
+    {
+      id: "3",
+      name: "Craft Beer Selection Pack",
+      brand: "Artisan Brewery",
+      price: 899,
+      rating: 4.7,
+      image: "/craft-beer-selection-bar.jpg",
+      slug: "craft-beer-pack"
+    },
+    {
+      id: "4",
+      name: "Premium Champagne",
+      brand: "Celebration Elite",
+      price: 4599,
+      rating: 5.0,
+      image: "/champagne-celebration-elegant.jpg",
+      slug: "premium-champagne"
+    }
+  ])
 
-  useEffect(() => {
-    // Fetch best sellers from API
-    fetch("/api/products?sort=sales&limit=4")
-      .then((res) => res.json())
-      .then((data) => setBestSellers(data.products?.slice(0, 4) || []))
-      .catch(console.error)
-  }, [])
+  // useEffect(() => {
+  //   // Fetch best sellers from API
+  //   fetch("/api/products?sort=sales&limit=4")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // Only update if API returns valid data
+  //       if (data.products && data.products.length > 0) {
+  //         setBestSellers(data.products.slice(0, 4))
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.log("Using fallback products:", error)
+  //       // Keep the fallback data if API fails
+  //     })
+  // }, [])
 
   return (
     <section className="container mx-auto px-4 py-16">
@@ -59,7 +104,7 @@ export function BestSellers() {
         </motion.p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
         {bestSellers.map((product, index) => (
           <motion.div
             key={product.id}
@@ -78,6 +123,11 @@ export function BestSellers() {
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
                     className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    loading="lazy"
+                    onError={(e) => {
+                      console.error("Image failed to load:", product.image)
+                      e.currentTarget.src = "/placeholder.svg"
+                    }}
                   />
                 </div>
                 <div className="p-4">
