@@ -12,7 +12,7 @@ interface NewArrival {
   brand: string
   price: number
   rating: number
-  image: string
+  images: string[]
   slug: string
 }
 
@@ -58,7 +58,7 @@ export function NewArrivals() {
         </motion.p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {newArrivals.map((product, index) => (
           <motion.div
             key={product.id}
@@ -74,9 +74,10 @@ export function NewArrivals() {
                 </div>
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img
-                    src={product.image || "/placeholder.svg"}
+                    src={product.images?.[0] || "/placeholder.svg"}
                     alt={product.name}
                     className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-4">

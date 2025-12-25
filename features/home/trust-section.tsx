@@ -40,7 +40,7 @@ export function TrustSection() {
           <p className="mt-4 text-pretty text-lg text-muted-foreground">Your trusted partner for premium beverages</p>
         </motion.div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {trustFeatures.map((feature, index) => (
             <motion.div
               key={feature.title}

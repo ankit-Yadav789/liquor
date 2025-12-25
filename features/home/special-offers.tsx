@@ -20,13 +20,13 @@ const offers = [
     icon: Tag,
     color: "bg-secondary/10 text-secondary-foreground",
   },
-  {
-    title: "Limited Time",
-    description: "Extra 15% off on premium whisky",
-    code: "WHISKY15",
-    icon: Clock,
-    color: "bg-accent/10 text-accent-foreground",
-  },
+  // {
+  //   title: "Limited Time",
+  //   description: "Extra 15% off on premium whisky",
+  //   code: "WHISKY15",
+  //   icon: Clock,
+  //   color: "bg-accent/10 text-accent-foreground",
+  // },
 ]
 
 export function SpecialOffers() {
@@ -46,7 +46,7 @@ export function SpecialOffers() {
         <p className="mt-4 text-pretty text-lg text-muted-foreground">Save big on your favorite drinks</p>
       </motion.div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {offers.map((offer, index) => (
           <motion.div
             key={offer.code}

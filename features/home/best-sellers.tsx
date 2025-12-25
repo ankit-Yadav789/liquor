@@ -12,7 +12,7 @@ interface BestSellerProduct {
   brand: string
   price: number
   rating: number
-  image: string
+  images: string[]
   slug: string
 }
 
@@ -24,7 +24,7 @@ export function BestSellers() {
       brand: "Château Excellence",
       price: 2499,
       rating: 4.8,
-      image: "/red-wine-bottle-chateau-margaux.jpg",
+      images: ["/red-wine-bottle-chateau-margaux.jpg"],
       slug: "premium-red-wine"
     },
     {
@@ -33,7 +33,7 @@ export function BestSellers() {
       brand: "Highland Reserve",
       price: 3999,
       rating: 4.9,
-      image: "/luxury-whiskey-bottles-bar.jpg",
+      images: ["/luxury-whiskey-bottles-bar.jpg"],
       slug: "single-malt-whiskey"
     },
     {
@@ -42,7 +42,7 @@ export function BestSellers() {
       brand: "Artisan Brewery",
       price: 899,
       rating: 4.7,
-      image: "/craft-beer-selection-bar.jpg",
+      images: ["/craft-beer-selection-bar.jpg"],
       slug: "craft-beer-pack"
     },
     {
@@ -51,26 +51,26 @@ export function BestSellers() {
       brand: "Celebration Elite",
       price: 4599,
       rating: 5.0,
-      image: "/champagne-celebration-elegant.jpg",
+      images: ["/champagne-celebration-elegant.jpg"],
       slug: "premium-champagne"
     }
   ])
 
-  // useEffect(() => {
-  //   // Fetch best sellers from API
-  //   fetch("/api/products?sort=sales&limit=4")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // Only update if API returns valid data
-  //       if (data.products && data.products.length > 0) {
-  //         setBestSellers(data.products.slice(0, 4))
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log("Using fallback products:", error)
-  //       // Keep the fallback data if API fails
-  //     })
-  // }, [])
+  useEffect(() => {
+    // Fetch best sellers from API
+    fetch("/api/products?sort=sales&limit=4")
+      .then((res) => res.json())
+      .then((data) => {
+        // Only update if API returns valid data
+        if (data.products && data.products.length > 0) {
+          setBestSellers(data.products.slice(0, 4))
+        }
+      })
+      .catch((error) => {
+        console.log("Using fallback products:", error)
+        // Keep the fallback data if API fails
+      })
+  }, [])
 
   return (
     <section className="container mx-auto px-4 py-16">
@@ -120,12 +120,12 @@ export function BestSellers() {
                 </div>
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img
-                    src={product.image || "/placeholder.svg"}
+                    src={product.images?.[0] || "/placeholder.svg"}
                     alt={product.name}
                     className="h-full w-full object-cover transition-transform group-hover:scale-105"
                     loading="lazy"
                     onError={(e) => {
-                      console.error("Image failed to load:", product.image)
+                      console.error("Image failed to load:", product.images?.[0])
                       e.currentTarget.src = "/placeholder.svg"
                     }}
                   />

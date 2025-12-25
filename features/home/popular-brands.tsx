@@ -10,8 +10,8 @@ const brands = [
   { name: "Absolut", logo: "/absolut-vodka-logo.jpg" },
   { name: "Bacardi", logo: "/bacardi-logo.jpg" },
   { name: "Hennessy", logo: "/hennessy-logo.jpg" },
-  { name: "Beefeater", logo: "/beefeater-gin-logo.jpg" },
-  { name: "Grey Goose", logo: "/grey-goose-logo.jpg" },
+  // { name: "Beefeater", logo: "/beefeater-gin-logo.jpg" },
+  // { name: "Grey Goose", logo: "/grey-goose-logo.jpg" },
 ]
 
 export function PopularBrands() {
@@ -27,7 +27,7 @@ export function PopularBrands() {
         <p className="mt-4 text-pretty text-lg text-muted-foreground">Shop from the world's finest brands</p>
       </motion.div>
 
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4">
+      <div className="grid grid-cols-3 gap-6 md:grid-cols-4 lg:grid-cols-4">
         {brands.map((brand, index) => (
           <motion.div
             key={brand.name}
