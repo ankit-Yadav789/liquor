@@ -11,8 +11,8 @@ const WhatsAppIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
 )
 
 export function FloatingContact({
-  phone = process.env.NEXT_PUBLIC_SUPPORT_PHONE || "+919876543210",
-  whatsappText = process.env.NEXT_PUBLIC_WHATSAPP_TEXT || "Hello, I need help",
+  phone = process.env.NEXT_PUBLIC_SUPPORT_PHONE || "+917340050070",
+  whatsappText = process.env.NEXT_PUBLIC_WHATSAPP_TEXT || "Hello, I need help to buy DaruAala products",
 }: {
   phone?: string
   whatsappText?: string
