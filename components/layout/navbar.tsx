@@ -29,9 +29,9 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/products", label: "Shop" },
-    { href: "/wines", label: "Wines" },
-    { href: "/whisky", label: "Whisky" },
-    { href: "/beer", label: "Beer" },
+    // { href: "/wines", label: "Wines" },
+    // { href: "/whisky", label: "Whisky" },
+    // { href: "/beer", label: "Beer" },
     { href: "/about", label: "About" },
   ]
 

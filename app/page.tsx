@@ -27,8 +27,8 @@ export default function HomePage() {
 
         {/* <FeaturedCategories /> */}
        <BestSellers />
-       {/* <FeaturedProducts /> */}
         <TrustSection />
+         <FeaturedProducts />
         <SpecialOffers />
         <PopularBrands />
         <NewArrivals />
