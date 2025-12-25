@@ -61,7 +61,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Wine className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">JaipurWines</span>
+            <span className="text-xl font-bold text-foreground">DaruAala</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -144,7 +144,7 @@ export function Navbar() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-[300px] h-[250px] p-10 sm:w-[400px]">
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <Link
