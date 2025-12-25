@@ -79,11 +79,11 @@ export function Navbar() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" aria-label="Search">
+            {/* <Button variant="ghost" size="icon" aria-label="Search">
               <Search className="h-5 w-5" />
-            </Button>
+            </Button> */}
 
-            {user ? (
+            {/* {user ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="icon" aria-label="Account">
@@ -122,7 +122,7 @@ export function Navbar() {
                   <User className="h-5 w-5" />
                 </Link>
               </Button>
-            )}
+            )} */}
 
             <Button variant="ghost" size="icon" className="relative" asChild aria-label="Cart">
               <Link href="/cart">
