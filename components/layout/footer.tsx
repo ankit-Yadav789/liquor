@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2">
               <Wine className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">JaipurWines</span>
+              <span className="text-xl font-bold">DaruAala</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Premium liquor, wines, and beer delivered to your doorstep. Quality guaranteed.
@@ -120,7 +120,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} JaipurWines. All rights reserved.</p>
+          <p>&copy; {currentYear} DaruAala. All rights reserved.</p>
           <p className="mt-2">Please drink responsibly. Must be 21+ years old to purchase.</p>
         </div>
       </div>

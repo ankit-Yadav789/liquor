@@ -10,7 +10,7 @@ export function AgeVerificationModal() {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    const isVerified = localStorage.getItem("jaipurwines-age-verified")
+    const isVerified = localStorage.getItem("daruaala-age-verified")
     if (!isVerified) {
       setIsOpen(true)
     }
@@ -18,7 +18,7 @@ export function AgeVerificationModal() {
 
   const handleVerify = (verified: boolean) => {
     if (verified) {
-      localStorage.setItem("jaipurwines-age-verified", "true")
+      localStorage.setItem("daruaala-age-verified", "true")
       setIsOpen(false)
     } else {
       window.location.href = "https://www.google.com"
@@ -31,7 +31,6 @@ export function AgeVerificationModal() {
         className="sm:max-w-md"
         onPointerDownOutside={(e) => e.preventDefault()}
         onEscapeKeyDown={(e) => e.preventDefault()}
-        hideCloseButton
       >
         <DialogHeader>
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">

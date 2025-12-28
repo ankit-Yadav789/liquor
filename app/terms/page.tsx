@@ -2,8 +2,8 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 
 export const metadata = {
-  title: "Terms & Conditions - JaipurWines",
-  description: "Terms and conditions for using JaipurWines services",
+  title: "Terms & Conditions - DaruAala",
+  description: "Terms and conditions for using DaruAala services",
 }
 
 export default function TermsPage() {
@@ -23,7 +23,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">1. Acceptance of Terms</h2>
               <p className="mt-4 text-muted-foreground">
-                By accessing and using JaipurWines website and services, you accept and agree to be bound by these Terms
+                By accessing and using DaruAala website and services, you accept and agree to be bound by these Terms
                 and Conditions. If you do not agree with any part of these terms, you must not use our services.
               </p>
             </section>
@@ -31,7 +31,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">2. Age Restriction</h2>
               <p className="mt-4 text-muted-foreground">
-                You must be at least 21 years of age to purchase alcohol from JaipurWines. By placing an order, you
+                You must be at least 21 years of age to purchase alcohol from DaruAala. By placing an order, you
                 confirm that you meet this age requirement. We reserve the right to verify your age through
                 government-issued identification at the time of delivery.
               </p>
@@ -77,7 +77,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">7. Responsible Drinking</h2>
               <p className="mt-4 text-muted-foreground">
-                JaipurWines promotes responsible consumption of alcohol. We encourage our customers to drink responsibly
+                DaruAala promotes responsible consumption of alcohol. We encourage our customers to drink responsibly
                 and never drink and drive. Excessive alcohol consumption is harmful to health.
               </p>
             </section>
@@ -93,7 +93,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">9. Limitation of Liability</h2>
               <p className="mt-4 text-muted-foreground">
-                JaipurWines shall not be liable for any indirect, incidental, special, or consequential damages arising
+                DaruAala shall not be liable for any indirect, incidental, special, or consequential damages arising
                 from the use of our services or products.
               </p>
             </section>
@@ -103,7 +103,7 @@ export default function TermsPage() {
               <p className="mt-4 text-muted-foreground">
                 For questions about these Terms & Conditions, contact us at:
                 <br />
-                Email: legal@jaipurwines.com
+                Email: legal@daruaala.com
                 <br />
                 Phone: +91 9876543210
               </p>

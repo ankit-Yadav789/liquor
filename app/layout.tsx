@@ -21,12 +21,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "JaipurWines - Premium Liquor, Wines & Beer",
+  title: "DaruAala - Premium Liquor, Wines & Beer",
   description: "Shop premium wines, whisky, beer, and spirits. Quality guaranteed with fast delivery.",
   keywords: ["wine", "liquor", "beer", "whisky", "spirits", "online liquor store"],
-  authors: [{ name: "JaipurWines" }],
+  authors: [{ name: "DaruAala" }],
   openGraph: {
-    title: "JaipurWines - Premium Liquor, Wines & Beer",
+    title: "DaruAala - Premium Liquor, Wines & Beer",
     description: "Shop premium wines, whisky, beer, and spirits. Quality guaranteed with fast delivery.",
     type: "website",
   },

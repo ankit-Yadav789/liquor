@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/footer"
 import { Wine, Award, Users, Truck } from "lucide-react"
 
 export const metadata = {
-  title: "About Us - JaipurWines",
-  description: "Learn about JaipurWines - Your trusted partner for premium beverages in Jaipur",
+  title: "About Us - DaruAala",
+  description: "Learn about DaruAala - Your trusted partner for premium beverages in Jaipur",
 }
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <main className="min-h-screen">
         <div className="border-b bg-muted/30 py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-balance text-4xl font-bold tracking-tight lg:text-5xl">About JaipurWines</h1>
+            <h1 className="text-balance text-4xl font-bold tracking-tight lg:text-5xl">About DaruAala</h1>
             <p className="mt-4 text-pretty text-lg text-muted-foreground max-w-3xl">
               Your trusted partner for premium liquor, wines, and beer in Jaipur
             </p>
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold">Our Story</h2>
               <p className="mt-4 text-muted-foreground">
-                Founded in 2020, JaipurWines has become the leading online liquor store in Jaipur, Rajasthan. We started
+                Founded in 2020, DaruAala has become the leading online liquor store in Jaipur, Rajasthan. We started
                 with a simple mission: to provide authentic, premium beverages with exceptional service and convenience.
               </p>
               <p className="mt-4 text-muted-foreground">
@@ -69,7 +69,7 @@ export default function AboutPage() {
             </div>
             <div className="rounded-lg border bg-card p-6 text-center">
               <Truck className="mx-auto h-12 w-12 text-primary" />
-              <h3 className="mt-4 text-2xl font-bold">2 Hours</h3>
+              <h3 className="mt-4 text-2xl font-bold">30 minutes</h3>
               <p className="mt-2 text-sm text-muted-foreground">Average Delivery Time</p>
             </div>
             <div className="rounded-lg border bg-card p-6 text-center">

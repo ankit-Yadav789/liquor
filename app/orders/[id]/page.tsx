@@ -12,7 +12,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params
   return {
-    title: `Order #${id.slice(-8)} - JaipurWines`,
+    title: `Order #${id.slice(-8)} - DaruAala`,
     description: "View order details and track your delivery",
   }
 }

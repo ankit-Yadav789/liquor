@@ -3,9 +3,9 @@ import { cookies } from "next/headers"
 import type { NextRequest } from "next/server"
 import type { User } from "@/types"
 
-const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET || "jaipurwines-secret-key-change-in-production")
+const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET || "daruaala-secret-key-change-in-production")
 
-const TOKEN_NAME = "jaipurwines-auth-token"
+const TOKEN_NAME = "daruaala-auth-token"
 
 export async function createToken(user: User): Promise<string> {
   const token = await new SignJWT({

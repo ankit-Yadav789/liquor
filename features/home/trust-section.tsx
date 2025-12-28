@@ -36,7 +36,7 @@ export function TrustSection() {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="text-balance text-3xl font-bold tracking-tight lg:text-4xl">Why Choose JaipurWines</h2>
+          <h2 className="text-balance text-3xl font-bold tracking-tight lg:text-4xl">Why Choose DaruAala</h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">Your trusted partner for premium beverages</p>
         </motion.div>
 

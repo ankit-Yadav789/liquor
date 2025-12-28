@@ -4,7 +4,7 @@ import type { User } from "@/types"
 export const MOCK_USERS: User[] = [
   {
     id: "admin_001",
-    email: "admin@jaipurwines.com",
+    email: "admin@daruaala.com",
     name: "Admin User",
     phone: "+91-9876543210",
     role: "admin",
@@ -14,7 +14,7 @@ export const MOCK_USERS: User[] = [
   },
   {
     id: "manager_001",
-    email: "manager@jaipurwines.com",
+    email: "manager@daruaala.com",
     name: "Manager User",
     phone: "+91-9876543211",
     role: "manager",

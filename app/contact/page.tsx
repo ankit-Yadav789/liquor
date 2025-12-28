@@ -4,8 +4,8 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
-  title: "Contact Us - JaipurWines",
-  description: "Get in touch with JaipurWines for any queries, support, or feedback",
+  title: "Contact Us - DaruAala",
+  description: "Get in touch with DaruAala for any queries, support, or feedback",
 }
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">+91 9876543210</p>
+                    <p className="mt-1 text-sm text-muted-foreground">+91 7340050070</p>
                     <p className="text-xs text-muted-foreground">Mon-Sun, 9 AM - 10 PM</p>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">support@jaipurwines.com</p>
+                    <p className="mt-1 text-sm text-muted-foreground">Aaladaru8@gmail.com</p>
                     <p className="text-xs text-muted-foreground">We'll respond within 24 hours</p>
                   </div>
                 </div>
@@ -60,9 +60,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      123 MI Road, C-Scheme
+                       17, Tonk Rd, Barkat Nagar, Lalkothi,
                       <br />
-                      Jaipur, Rajasthan 302001
+                      Jaipur, Rajasthan 302015
                     </p>
                   </div>
                 </div>

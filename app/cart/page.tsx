@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/footer"
 import { CartContent } from "@/features/cart/cart-content"
 
 export const metadata: Metadata = {
-  title: "Shopping Cart - JaipurWines",
+  title: "Shopping Cart - DaruAala",
   description: "Review your cart and proceed to checkout",
 }
 

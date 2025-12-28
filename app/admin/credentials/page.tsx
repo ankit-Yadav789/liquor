@@ -6,7 +6,7 @@ export default function AdminCredentialsPage() {
     <div className="container max-w-4xl py-12">
       <div className="mb-8 text-center">
         <h1 className="text-4xl font-bold text-foreground mb-2">Admin Login Credentials</h1>
-        <p className="text-muted-foreground">Demo accounts for testing the JaipurWines platform</p>
+        <p className="text-muted-foreground">Demo accounts for testing the DaruAala platform</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -24,7 +24,7 @@ export default function AdminCredentialsPage() {
                 <User className="h-4 w-4" />
                 <span className="font-medium">Email:</span>
               </div>
-              <code className="block bg-muted p-3 rounded-md text-sm">admin@jaipurwines.com</code>
+              <code className="block bg-muted p-3 rounded-md text-sm">admin@daruaala.com</code>
             </div>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -50,7 +50,7 @@ export default function AdminCredentialsPage() {
                 <User className="h-4 w-4" />
                 <span className="font-medium">Email:</span>
               </div>
-              <code className="block bg-muted p-3 rounded-md text-sm">manager@jaipurwines.com</code>
+              <code className="block bg-muted p-3 rounded-md text-sm">manager@daruaala.com</code>
             </div>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">

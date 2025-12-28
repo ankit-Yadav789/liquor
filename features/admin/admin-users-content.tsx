@@ -33,7 +33,7 @@ const mockUsers = [
   {
     id: "3",
     name: "Admin User",
-    email: "admin@jaipurwines.com",
+    email: "admin@daruaala.com",
     role: "admin",
     orders: 0,
     totalSpent: 0,

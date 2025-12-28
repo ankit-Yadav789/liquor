@@ -5,7 +5,7 @@ import { ProductsContent } from "@/features/products/products-content"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Shop Premium Wines, Whisky & Spirits - JaipurWines",
+  title: "Shop Premium Wines, Whisky & Spirits - DaruAala",
   description: "Browse our extensive collection of premium wines, whisky, beer, and spirits from top brands worldwide.",
 }
 

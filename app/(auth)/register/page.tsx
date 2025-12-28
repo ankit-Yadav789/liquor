@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { RegisterForm } from "@/features/auth/register-form"
 
 export const metadata: Metadata = {
-  title: "Register - JaipurWines",
+  title: "Register - DaruAala",
   description: "Create your account",
 }
 

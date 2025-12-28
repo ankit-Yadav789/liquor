@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: "Product Not Found - JaipurWines",
+      title: "Product Not Found - DaruAala",
     }
   }
 
   return {
-    title: `${product.name} - JaipurWines`,
+    title: `${product.name} - DaruAala`,
     description: product.description,
     openGraph: {
       title: product.name,

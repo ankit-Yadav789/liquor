@@ -96,7 +96,7 @@ export const useCartStore = create<CartStore>()(
       },
     }),
     {
-      name: "jaipurwines-cart",
+      name: "daruaala-cart",
     },
   ),
 )

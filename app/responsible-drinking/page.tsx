@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/footer"
 import { AlertTriangle, Heart, Car, Users } from "lucide-react"
 
 export const metadata = {
-  title: "Responsible Drinking - JaipurWines",
+  title: "Responsible Drinking - DaruAala",
   description: "Information about responsible alcohol consumption and drinking guidelines",
 }
 
@@ -50,7 +50,7 @@ export default function ResponsibleDrinkingPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">Why Responsible Drinking Matters</h2>
               <p className="mt-4 text-muted-foreground">
-                At JaipurWines, we are committed to promoting responsible consumption of alcoholic beverages. While
+                At DaruAala, we are committed to promoting responsible consumption of alcoholic beverages. While
                 alcohol can be enjoyed as part of social occasions and celebrations, it's essential to understand the
                 risks associated with excessive or irresponsible consumption.
               </p>
@@ -155,7 +155,7 @@ export default function ResponsibleDrinkingPage() {
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold">Our Commitment</h2>
-              <p className="mt-4 text-muted-foreground">JaipurWines is committed to:</p>
+              <p className="mt-4 text-muted-foreground">DaruAala is committed to:</p>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
                 <li>Verifying age of all customers (21+ years)</li>
                 <li>Promoting responsible drinking messages</li>

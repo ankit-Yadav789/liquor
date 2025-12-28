@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { LoginForm } from "@/features/auth/login-form"
 
 export const metadata: Metadata = {
-  title: "Login - JaipurWines",
+  title: "Login - DaruAala",
   description: "Sign in to your account",
 }
 
@@ -18,7 +18,7 @@ export default function LoginPage() {
             <Wine className="h-6 w-6 text-primary" />
           </div>
           <CardTitle className="font-serif text-2xl">Welcome Back</CardTitle>
-          <CardDescription>Sign in to your JaipurWines account</CardDescription>
+          <CardDescription>Sign in to your DaruAala account</CardDescription>
         </CardHeader>
         <CardContent>
           <LoginForm />

@@ -2,8 +2,8 @@ import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 
 export const metadata = {
-  title: "Privacy Policy - JaipurWines",
-  description: "Privacy policy for JaipurWines - How we collect, use, and protect your information",
+  title: "Privacy Policy - DaruAala",
+  description: "Privacy policy for DaruAala - How we collect, use, and protect your information",
 }
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">Introduction</h2>
               <p className="mt-4 text-muted-foreground">
-                At JaipurWines, we are committed to protecting your privacy and ensuring the security of your personal
+                At DaruAala, we are committed to protecting your privacy and ensuring the security of your personal
                 information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information
                 when you visit our website and use our services.
               </p>
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <p className="mt-4 text-muted-foreground">
-                Email: privacy@jaipurwines.com
+                Email: privacy@daruaala.com
                 <br />
                 Phone: +91 9876543210
               </p>

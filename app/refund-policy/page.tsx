@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/footer"
 import { AlertCircle } from "lucide-react"
 
 export const metadata = {
-  title: "Refund & Cancellation Policy - JaipurWines",
-  description: "Refund and cancellation policy for JaipurWines",
+  title: "Refund & Cancellation Policy - DaruAala",
+  description: "Refund and cancellation policy for DaruAala",
 }
 
 export default function RefundPolicyPage() {
@@ -104,7 +104,7 @@ export default function RefundPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold">How to Request Refund/Cancellation</h2>
               <ol className="mt-4 list-decimal space-y-2 pl-6 text-muted-foreground">
-                <li>Contact us immediately at support@jaipurwines.com or +91 9876543210</li>
+                <li>Contact us immediately at support@daruaala.com or +91 9876543210</li>
                 <li>Provide your order number and details</li>
                 <li>Share clear photos of the issue (if applicable)</li>
                 <li>Our team will review and respond within 24 hours</li>
@@ -126,7 +126,7 @@ export default function RefundPolicyPage() {
               <p className="mt-4 text-muted-foreground">
                 For refund or cancellation requests:
                 <br />
-                Email: support@jaipurwines.com
+                Email: support@daruaala.com
                 <br />
                 Phone: +91 9876543210
                 <br />

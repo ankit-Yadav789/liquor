@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
-  name: "JaipurWines",
+  name: "DaruAala",
   description: "Premium liquor, wines, and beer delivered to your doorstep",
-  url: "https://jaipurwines.com",
+  url: "https://daruaala.com",
   legalAge: 21,
   currency: "INR",
   currencySymbol: "₹",

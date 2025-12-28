@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/footer"
 import { Truck, Clock, MapPin, Package } from "lucide-react"
 
 export const metadata = {
-  title: "Shipping Policy - JaipurWines",
-  description: "Delivery and shipping policy for JaipurWines",
+  title: "Shipping Policy - DaruAala",
+  description: "Delivery and shipping policy for DaruAala",
 }
 
 export default function ShippingPolicyPage() {
@@ -161,7 +161,7 @@ export default function ShippingPolicyPage() {
                 <br />
                 Phone: +91 9876543210
                 <br />
-                Email: delivery@jaipurwines.com
+                Email: delivery@daruaala.com
                 <br />
                 Hours: 9 AM - 10 PM (Daily)
               </p>

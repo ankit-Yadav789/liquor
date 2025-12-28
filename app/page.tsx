@@ -29,7 +29,7 @@ export default function HomePage() {
        <BestSellers />
         <TrustSection />
          <FeaturedProducts />
-        <SpecialOffers />
+        {/* <SpecialOffers /> */}
         <PopularBrands />
         <NewArrivals />
         <CustomerReviews />

@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/footer"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata = {
-  title: "FAQs - JaipurWines",
-  description: "Frequently asked questions about JaipurWines services, delivery, and policies",
+  title: "FAQs - DaruAala",
+  description: "Frequently asked questions about DaruAala services, delivery, and policies",
 }
 
 const faqs = [

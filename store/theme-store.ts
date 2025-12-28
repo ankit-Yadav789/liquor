@@ -20,7 +20,7 @@ export const useThemeStore = create<ThemeStore>()(
       setTheme: (theme) => set({ theme }),
     }),
     {
-      name: "jaipurwines-theme",
+      name: "daruaala-theme",
     },
   ),
 )

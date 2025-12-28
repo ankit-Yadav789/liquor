@@ -52,11 +52,11 @@ export function HeroSliderSection() {
   }, [isAutoPlaying])
 
   const handleCall = () => {
-    window.location.href = "tel:+9876543210"
+    window.location.href = "tel:+917340050070"
   }
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/9876543210?text=Hello, I'm interested in your premium liquor collection", "_blank")
+    window.open("https://wa.me/917340050070?text=Hello, I'm interested in your premium liquor collection", "_blank")
   }
 
   return (
@@ -122,11 +122,11 @@ export function HeroSliderSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
             <Button 
               size="lg" 
-              className="group bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full sm:w-auto group bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleCall}
               aria-label="Call us directly"
             >
@@ -136,7 +136,7 @@ export function HeroSliderSection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="group border-2 border-secondary bg-green-500/70 hover:bg-green-500 hover:text-green-500 shadow-lg hover:shadow-xl transition-all text-white hover:text-white duration-300"
+              className="w-full sm:w-auto group border-2 border-secondary bg-green-500/70 hover:bg-green-500 hover:text-green-500 shadow-lg hover:shadow-xl transition-all text-white hover:text-white duration-300"
               onClick={handleWhatsApp}
               aria-label="Contact us on WhatsApp"
             >

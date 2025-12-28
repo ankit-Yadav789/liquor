@@ -19,58 +19,58 @@ interface BestSellerProduct {
 export function BestSellers() {
   const [bestSellers, setBestSellers] = useState<BestSellerProduct[]>([
     {
-      id: "1",
-      name: "Premium Red Wine Collection",
-      brand: "Château Excellence",
-      price: 2499,
+      id: "45",
+      name: "Jameson Irish Whiskey",
+      brand: "Jameson",
+      price: 3000,
       rating: 4.8,
-      images: ["/red-wine-bottle-chateau-margaux.jpg"],
-      slug: "premium-red-wine"
+      images: ["/whisky-placeholder.png"],
+      slug: "jameson-irish-whiskey"
     },
     {
-      id: "2",
-      name: "Single Malt Whiskey",
-      brand: "Highland Reserve",
-      price: 3999,
-      rating: 4.9,
-      images: ["/luxury-whiskey-bottles-bar.jpg"],
-      slug: "single-malt-whiskey"
+      id: "46",
+      name: "Rockford Reserve",
+      brand: "Rockford",
+      price: 1400,
+      rating: 4.4,
+      images: ["/whisky-placeholder.png"],
+      slug: "rockford-reserve"
     },
     {
-      id: "3",
-      name: "Craft Beer Selection Pack",
-      brand: "Artisan Brewery",
-      price: 899,
-      rating: 4.7,
-      images: ["/craft-beer-selection-bar.jpg"],
-      slug: "craft-beer-pack"
+      id: "47",
+      name: "Ballantine's Finest",
+      brand: "Ballantine's",
+      price: 1900,
+      rating: 4.6,
+      images: ["/whisky-placeholder.png"],
+      slug: "ballantines-finest"
     },
     {
-      id: "4",
-      name: "Premium Champagne",
-      brand: "Celebration Elite",
-      price: 4599,
-      rating: 5.0,
-      images: ["/champagne-celebration-elegant.jpg"],
-      slug: "premium-champagne"
+      id: "48",
+      name: "Antiquity Blue",
+      brand: "Antiquity",
+      price: 1600,
+      rating: 4.5,
+      images: ["/whisky-placeholder.png"],
+      slug: "antiquity-blue"
     }
   ])
 
-  useEffect(() => {
-    // Fetch best sellers from API
-    fetch("/api/products?sort=sales&limit=4")
-      .then((res) => res.json())
-      .then((data) => {
-        // Only update if API returns valid data
-        if (data.products && data.products.length > 0) {
-          setBestSellers(data.products.slice(0, 4))
-        }
-      })
-      .catch((error) => {
-        console.log("Using fallback products:", error)
-        // Keep the fallback data if API fails
-      })
-  }, [])
+  // useEffect(() => {
+  //   // Fetch best sellers from API
+  //   fetch("/api/products?sort=sales&limit=4")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // Only update if API returns valid data
+  //       if (data.products && data.products.length > 0) {
+  //         setBestSellers(data.products.slice(0, 4))
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.log("Using fallback products:", error)
+  //       // Keep the fallback data if API fails
+  //     })
+  // }, [])
 
   return (
     <section className="container mx-auto px-4 py-16">

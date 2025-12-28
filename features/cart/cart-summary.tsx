@@ -126,11 +126,40 @@ export function CartSummary({ showCheckoutButton = true }: CartSummaryProps) {
         </div>
 
         {showCheckoutButton && (
-          <Button asChild size="lg" className="w-full">
-            <Link href="/checkout">Proceed to Checkout</Link>
+          <Button size="lg" className="w-full" onClick={handleCheckout}>
+            Proceed to Checkout
           </Button>
         )}
       </CardContent>
     </Card>
   )
+}
+
+function handleCheckout() {
+  const { items, getSubtotal, couponDiscount } = useCartStore.getState()
+  const subtotal = getSubtotal()
+  const discountAmount = (subtotal * couponDiscount) / 100
+  const deliveryCharge = subtotal >= 2000 ? 0 : 100
+  const total = subtotal - discountAmount + deliveryCharge
+
+  let message = "*New Order Request*\n\n*Items:*\n"
+  
+  items.forEach((item, index) => {
+    message += `${index + 1}. ${item.product.name} (x${item.quantity}) - ${SITE_CONFIG.currencySymbol}${item.product.price * item.quantity}\n`
+  })
+
+  message += `\n*Summary:*\n`
+  message += `Subtotal: ${SITE_CONFIG.currencySymbol}${subtotal}\n`
+  if (couponDiscount > 0) {
+    message += `Discount: -${SITE_CONFIG.currencySymbol}${discountAmount}\n`
+  }
+  message += `Delivery: ${deliveryCharge === 0 ? "FREE" : `${SITE_CONFIG.currencySymbol}${deliveryCharge}`}\n`
+  message += `*Total: ${SITE_CONFIG.currencySymbol}${total}*\n`
+  
+  message += `\nPlease process my order.`
+
+  const phoneNumber = "917340050070"
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+  
+  window.open(url, "_blank")
 }

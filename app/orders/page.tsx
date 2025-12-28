@@ -6,7 +6,7 @@ import { getCurrentUser } from "@/lib/auth"
 import { redirect } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "My Orders - JaipurWines",
+  title: "My Orders - DaruAala",
   description: "Track and manage your orders",
 }
 

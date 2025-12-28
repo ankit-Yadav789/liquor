@@ -3,7 +3,7 @@ import { getCurrentUser } from "@/lib/auth"
 import { AdminDashboard } from "@/features/admin/admin-dashboard"
 
 export const metadata = {
-  title: "Admin Dashboard - JaipurWines",
+  title: "Admin Dashboard - DaruAala",
   description: "Manage your liquor e-commerce platform",
 }
 
