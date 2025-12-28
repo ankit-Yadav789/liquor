@@ -182,14 +182,14 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
               </Button>
             </div>
 
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Button variant="outline" size="icon">
                 <Heart className="h-5 w-5" />
               </Button>
               <Button variant="outline" size="icon">
                 <Share2 className="h-5 w-5" />
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Features */}
@@ -204,17 +204,17 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
             <div className="flex items-center gap-3">
               <Truck className="h-5 w-5 text-primary" />
               <div>
-                <p className="text-sm font-medium">Free Delivery</p>
+                <p className="text-sm font-medium">Cash On Delivery</p>
                 <p className="text-xs text-muted-foreground">On orders above ₹2000</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <RefreshCw className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-sm font-medium">Easy Returns</p>
                 <p className="text-xs text-muted-foreground">7 days return policy</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
