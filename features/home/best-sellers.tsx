@@ -6,71 +6,21 @@ import { Star, Trophy } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-interface BestSellerProduct {
-  id: string
-  name: string
-  brand: string
-  price: number
-  rating: number
-  images: string[]
-  slug: string
-}
+
+import { mockProducts } from "@/lib/mock-data/products"
+import { Product } from "@/types"
 
 export function BestSellers() {
-  const [bestSellers, setBestSellers] = useState<BestSellerProduct[]>([
-    {
-      id: "45",
-      name: "Jameson Irish Whiskey",
-      brand: "Jameson",
-      price: 3000,
-      rating: 4.8,
-      images: ["/whisky-placeholder.png"],
-      slug: "jameson-irish-whiskey"
-    },
-    {
-      id: "46",
-      name: "Rockford Reserve",
-      brand: "Rockford",
-      price: 1400,
-      rating: 4.4,
-      images: ["/whisky-placeholder.png"],
-      slug: "rockford-reserve"
-    },
-    {
-      id: "47",
-      name: "Ballantine's Finest",
-      brand: "Ballantine's",
-      price: 1900,
-      rating: 4.6,
-      images: ["/whisky-placeholder.png"],
-      slug: "ballantines-finest"
-    },
-    {
-      id: "48",
-      name: "Antiquity Blue",
-      brand: "Antiquity",
-      price: 1600,
-      rating: 4.5,
-      images: ["/whisky-placeholder.png"],
-      slug: "antiquity-blue"
-    }
-  ])
 
-  // useEffect(() => {
-  //   // Fetch best sellers from API
-  //   fetch("/api/products?sort=sales&limit=4")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // Only update if API returns valid data
-  //       if (data.products && data.products.length > 0) {
-  //         setBestSellers(data.products.slice(0, 4))
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log("Using fallback products:", error)
-  //       // Keep the fallback data if API fails
-  //     })
-  // }, [])
+  const bestSellers = [
+    "jameson-irish-whiskey",
+    "rockford-reserve",
+    "ballantines-finest",
+    "antiquity-blue"
+  ]
+    .map(slug => mockProducts.find(p => p.slug === slug))
+    .filter((p): p is Product => p !== undefined)
+
 
   return (
     <section className="container mx-auto px-4 py-16">
