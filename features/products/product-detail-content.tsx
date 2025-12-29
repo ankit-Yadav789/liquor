@@ -205,7 +205,7 @@ export function ProductDetailContent({ product }: ProductDetailContentProps) {
               <Truck className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-sm font-medium">Cash On Delivery</p>
-                <p className="text-xs text-muted-foreground">On orders above ₹2000</p>
+                {/* <p className="text-xs text-muted-foreground">On orders above ₹2000</p> */}
               </div>
             </div>
             {/* <div className="flex items-center gap-3">
