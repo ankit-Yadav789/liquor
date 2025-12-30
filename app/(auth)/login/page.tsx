@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Wine } from "lucide-react"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { LoginForm } from "@/features/auth/login-form"
 
@@ -14,8 +14,14 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-muted/30 px-4 py-12">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1 text-center">
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-            <Wine className="h-6 w-6 text-primary" />
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <Image 
+              src="/logo1.png" 
+              alt="DaruAala Logo" 
+              width={40} 
+              height={40} 
+              className="h-10 w-10 object-contain" 
+            />
           </div>
           <CardTitle className="font-serif text-2xl">Welcome Back</CardTitle>
           <CardDescription>Sign in to your DaruAala account</CardDescription>

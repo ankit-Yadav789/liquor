@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { Wine } from "lucide-react"
+import Image from "next/image"
 import { SITE_CONFIG } from "@/lib/constants"
 
 export function AgeVerificationModal() {
@@ -34,7 +34,13 @@ export function AgeVerificationModal() {
       >
         <DialogHeader>
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-            <Wine className="h-8 w-8 text-primary" />
+            <Image 
+              src="/logo1.png" 
+              alt="DaruAala Logo" 
+              width={40} 
+              height={40} 
+              className="h-10 w-10 object-contain" 
+            />
           </div>
           <DialogTitle className="text-center font-serif text-2xl">Age Verification</DialogTitle>
           <DialogDescription className="text-center">

@@ -2,8 +2,9 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Palette, Wine, BarChart3, Settings } from "lucide-react"
+import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Palette, BarChart3, Settings } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
@@ -25,7 +26,13 @@ export function AdminSidebar() {
     <aside className="hidden w-64 border-r bg-muted/20 lg:block">
       <div className="flex h-16 items-center border-b px-6">
         <Link href="/admin" className="flex items-center gap-2">
-          <Wine className="h-6 w-6 text-primary" />
+          <Image 
+            src="/logo1.png" 
+            alt="Admin Logo" 
+            width={32} 
+            height={32} 
+            className="h-8 w-8 object-contain" 
+          />
           <span className="font-bold">Admin Panel</span>
         </Link>
       </div>

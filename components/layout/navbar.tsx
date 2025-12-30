@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { ShoppingCart, User, Search, Menu, Wine, LogOut } from "lucide-react"
+import { ShoppingCart, User, Search, Menu, LogOut } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "./theme-toggle"
 import { useState } from "react"
@@ -60,7 +61,13 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Wine className="h-8 w-8 text-primary" />
+            <Image
+              src="/logo1.png"
+              alt="DaruAala Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain"
+            />
             <span className="text-xl font-bold text-foreground">DaruAala</span>
           </Link>
 

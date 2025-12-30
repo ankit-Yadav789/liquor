@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Wine, Facebook, Twitter, Instagram, Mail } from "lucide-react"
+import Image from "next/image"
+import { Facebook, Twitter, Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,7 +12,13 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <Wine className="h-8 w-8 text-primary" />
+              <Image 
+                src="/logo1.png" 
+                alt="DaruAala Logo" 
+                width={40} 
+                height={40} 
+                className="h-10 w-10 object-contain" 
+              />
               <span className="text-xl font-bold">DaruAala</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
