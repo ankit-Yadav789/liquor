@@ -17,9 +17,11 @@ import { HeroSliderSection } from "@/features/home/hero-slider-section"
 import { HeroModernSection } from "@/features/home/hero-modern-section"
 import { HeroPremiumSection } from "@/features/home/hero-premium-section"
 import { HeroUltraModernSection } from "@/features/home/hero-ultra-modern-section"
+import { JsonLd } from "@/components/seo/json-ld"
 export default function HomePage() {
   return (
     <>
+      <JsonLd />
       <AgeVerificationModal />
       <Navbar />
       <main>
