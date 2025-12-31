@@ -5,6 +5,7 @@ import { ProductDetailContent } from "@/features/products/product-detail-content
 import { getProductBySlug, mockProducts } from "@/lib/mock-data/products"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
+import { ProductJsonLd } from "@/components/seo/product-json-ld"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -47,6 +48,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <>
+      <ProductJsonLd product={product} />
       <Navbar />
       <main className="min-h-screen">
         <Suspense fallback={<div>Loading...</div>}>
