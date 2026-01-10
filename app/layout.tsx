@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     canonical: "./",
   },
   verification: {
-    google: "WQ7wj1w9JhU0kRyeRnxPnefMUs7mqjf6L_CZDkVnGgg", // Replace with actual code from GSC
+    google: "DeQpISgfgnLDmvIleisL5Q2YA7ZhqlQ_RFNRZ7_-OJo", // Replace with actual code from GSC
   },
   generator: "v0.app",
 };
