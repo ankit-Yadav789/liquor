@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { AuthProvider } from "@/components/providers/auth-provider"
 import { Toaster } from "@/components/ui/toaster"
@@ -95,6 +96,8 @@ export const metadata: Metadata = {
   generator: "v0.app",
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -107,9 +110,22 @@ export default function RootLayout({
         <ThemeProvider>
           <AuthProvider>
             {children}
-         <FloatingContact />      
+            <FloatingContact />      
             <Toaster />
             <Analytics />
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+              `}
+            </Script>
           </AuthProvider>
         </ThemeProvider>
       </body>
