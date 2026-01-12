@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ShoppingCart, Star } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import { motion } from "framer-motion"
 import type { Product } from "@/types"
 import { SITE_CONFIG } from "@/lib/constants"
@@ -45,12 +44,10 @@ export function ProductCard({ product }: ProductCardProps) {
       <Card className="group h-full overflow-hidden transition-all hover:shadow-lg">
         <Link href={`/products/${product.slug}`}>
           <div className="relative aspect-square overflow-hidden bg-muted">
-            <Image
+            <img
               src={product.images[0] || "/placeholder.svg"}
               alt={product.name}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
             {discountPercentage > 0 && (
               <Badge className="absolute right-2 top-2 bg-destructive text-destructive-foreground">
