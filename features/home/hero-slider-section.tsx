@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Phone, MessageCircle } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 const slides = [
   {
@@ -76,11 +77,14 @@ export function HeroSliderSection() {
           transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <img
+
+          <Image
             src={slides[currentSlide].image}
             alt={slides[currentSlide].alt}
-            className="h-full w-full object-cover"
-            loading="eager"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
           />
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-background/30 to-background/10" />

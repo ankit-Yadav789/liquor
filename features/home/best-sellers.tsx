@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Star, Trophy } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 
@@ -69,15 +70,12 @@ export function BestSellers() {
                   Most Loved
                 </div>
                 <div className="aspect-square overflow-hidden bg-muted">
-                  <img
+                  <Image
                     src={product.images?.[0] || "/placeholder.svg"}
                     alt={product.name}
-                    className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                    loading="lazy"
-                    onError={(e) => {
-                      console.error("Image failed to load:", product.images?.[0])
-                      e.currentTarget.src = "/placeholder.svg"
-                    }}
+                    fill
+                    className="object-cover transition-transform group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-4">
